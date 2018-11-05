@@ -90,7 +90,8 @@ class Cart extends React.Component {
     }, this)
 
     return(
-      <Panel header="Cart" bsStyle="primary" >
+      <Col xs={12}>
+      <Panel header="Cart" bsStyle="primary">
         {cartItemsList}
         <Row>
           <Col xs={12}>
@@ -116,6 +117,7 @@ class Cart extends React.Component {
           </Modal.Footer>
         </Modal>
       </Panel>
+      </Col>
     )
   }
 }

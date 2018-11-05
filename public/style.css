@@ -61,3 +61,7 @@ button.link {
   width: 100%;
   margin-top: 50px !important;
 } */
+
+.panel-primary>.panel-heading {
+  margin-top: 9px;
+}
