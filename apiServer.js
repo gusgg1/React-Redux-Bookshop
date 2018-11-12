@@ -7,6 +7,9 @@ const bodyParser   = require('body-parser');
 const session      = require('express-session');
 const MongoStore   = require('connect-mongo')(session);
 
+// configure dotenv
+require('dotenv').config();
+
 const app = express();
 
 
@@ -20,6 +23,7 @@ app.use(cookieParser());
 
 // APIs
 const mongoose = require('mongoose');
+
 const databaseUri = process.env.MONGODB_URI || 'mongodb://localhost:27017/bookshop';
 
 mongoose.connect(databaseUri, { useNewUrlParser: true })
