@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 
-// APIs
+// API
 const mongoose = require('mongoose');
 
 const databaseUri = process.env.MONGODB_URI || 'mongodb://localhost:27017/bookshop';
