@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www | node apiServer.js",
-    "webpack_dev": "webpack --mode development",
-    "build": "webpack --mode production"
+    "webpack_dev": "webpack --mode development"
   },
   "devDependencies": {
     "nodemon": "^1.11.0",
